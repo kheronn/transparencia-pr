@@ -1,6 +1,6 @@
 # Transparência Paraná
 
-### Projeto desenvolvido em Angular 7 com API Rest Dados Abertos do Governo Estadual ()
+### Projeto desenvolvido em Angular 7 com API Rest Dados Abertos do Governo Estadual 
 
 
 #### Tutorial 
