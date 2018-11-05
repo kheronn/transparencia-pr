@@ -14,17 +14,15 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {}
   busca($event) {
-    
-
 
     this.showSpinner = true;
     let datePipe = new DatePipe("pt-BR");
-
     let data = datePipe.transform(new Date($event.value), "dd/MM/yyyy");
-
     this.licitacaoService.getLicitacoes(data).subscribe(dados => {
       this.licitacoes = dados;
+      console.log(dados)
       this.showSpinner = false;
-    });
+    })
+    ;
   }
 }

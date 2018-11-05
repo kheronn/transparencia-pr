@@ -1,13 +1,17 @@
+html {
+
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 5px;
 }
 .pesquisa{
-    
+
     margin: 10px;
     text-align: right;
 }
@@ -21,6 +25,11 @@ mat-card{
     margin: 5px;
 }
 
-.orgao{
+.sublinhado{
     text-decoration: underline;
+}
+
+.icons-action{
+  justify-content: flex-end;
+  text-align: right
 }

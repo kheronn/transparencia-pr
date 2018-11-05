@@ -13,9 +13,11 @@ export interface Licitacao {
   modalidade: string;
   orgao_responsavel: string;
   criterio_julgamento: string;
+  local_disputa: string;
   num_ano_edital: string;
   valor_maximo_inicial: string;
-  composicao_proceso: Processo[]
+  objetivo: string;
+  composicao_processo: Processo[]
 }
 export interface Processo {
   valor_maximo_inicial_lote: string;
@@ -23,6 +25,7 @@ export interface Processo {
   situacao_lote: string;
   valor_finalizado: string;
   valor_maximo_inicial: string;
+  caracteristica_lote: string;
   lista_item: Item[];
 }
 

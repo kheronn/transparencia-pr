@@ -15,20 +15,35 @@
 
   <!-- Resultados -->
 
-  <h2>Resultados <span [matBadge]="licitacoes?.quantidade" matBadgeOverlap="true"></span> </h2>
+  <h2>Resultados {{licitacoes?.quantidade}}</h2>
   <mat-spinner *ngIf="showSpinner"></mat-spinner>
-  
+
   <div class="resultados">
 
     <mat-card *ngFor="let licitacao of licitacoes?.listaLicitacoes">
-      <mat-card-header>{{licitacao.modalidade}} - Nº{{licitacao.num_ano_edital}}</mat-card-header>
+
       <mat-card-content>
-        <p class="orgao">{{licitacao.orgao_responsavel}}</p>
-        <p> Valor Máximo  <b>{{licitacao.valor_maximo_inicial}}</b> </p>
-        <p></p>
-        <mat-card-actions>
-            <button mat-button>ITENS</button>
-          </mat-card-actions>
+        <h3>{{licitacao.modalidade}} - Nº{{licitacao.num_ano_edital}} </h3>
+        <p class="sublinhado">{{licitacao.orgao_responsavel}}</p>
+        <p> Valor Máximo: <b style="color: red">{{licitacao.valor_maximo_inicial}}</b> </p>
+        <p> Abertura: <b style="color: blue">{{licitacao.data_abertura}}</b> </p>
+        <p> Critério: <b>{{licitacao.criterio_julgamento}}</b> </p>
+        <p class="sublinhado">Objetivo</p>
+        <p style="text-align: justify">{{licitacao.objetivo}}</p>
+        <mat-accordion>
+          <mat-expansion-panel *ngFor="let lote of licitacao?.composicao_processo">
+            <mat-expansion-panel-header>
+              LOTE {{lote.numero_lote}}
+            </mat-expansion-panel-header>
+            <p>{{lote.caracteristica_lote}}</p>
+            <p> R$ Maximo Inicial: <b style="color: red">{{lote.valor_maximo_inicial_lote}}</b> </p>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <mat-card-actions class="icons-action">
+          <a [href]="licitacao.local_disputa" target="_blank">
+            <mat-icon>important_devices</mat-icon>
+          </a>
+        </mat-card-actions>
       </mat-card-content>
     </mat-card>
   </div>

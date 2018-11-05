@@ -6,6 +6,8 @@
 #### Tutorial 
 [Parte 1]( https://medium.com/@kheronn.machado/aplicacao-angular7-dados-abertos-part1-ba6b87573f86 )
 
+[Parte 2]( https://medium.com/@kheronn.machado/aplicacao-angular7-dados-abertos-part1-ba6b87573f86 )
+
 
 
 Baixe o arquivo e na pasta do projeto, execute no terminal
