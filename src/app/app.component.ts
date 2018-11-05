@@ -10,19 +10,16 @@ import { DatePipe } from "@angular/common";
 export class AppComponent implements OnInit {
   licitacoes: RetornoLicitacao;
   showSpinner: boolean;
-  constructor(private licitacaoService: LicitacaoService) {}
+  constructor(private licitacaoService: LicitacaoService) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
   busca($event) {
-
     this.showSpinner = true;
     let datePipe = new DatePipe("pt-BR");
     let data = datePipe.transform(new Date($event.value), "dd/MM/yyyy");
     this.licitacaoService.getLicitacoes(data).subscribe(dados => {
       this.licitacoes = dados;
-      console.log(dados)
       this.showSpinner = false;
     })
-    ;
   }
 }
