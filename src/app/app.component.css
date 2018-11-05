@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.pesquisa{
+    
+    margin: 10px;
+    text-align: right;
+}
+
+.resultados{
+    margin: 5px;
+    padding: 2px;
+}
+
+mat-card{
+    margin: 5px;
+}
+
+.orgao{
+    text-decoration: underline;
+}

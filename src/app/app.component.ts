@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { LicitacaoService, RetornoLicitacao } from "./licitacao.service";
-import { Observable } from "rxjs";
+import { DatePipe } from "@angular/common";
 
 @Component({
   selector: "app-root",
@@ -8,14 +8,23 @@ import { Observable } from "rxjs";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-
-  licitacoes:RetornoLicitacao;
+  licitacoes: RetornoLicitacao;
+  showSpinner: boolean;
   constructor(private licitacaoService: LicitacaoService) {}
 
-  ngOnInit() {
-    this.licitacaoService.getLicitacoes("31/10/2018").subscribe(dados => {
-      this.licitacoes = dados
-      console.log(this.licitacoes);
+  ngOnInit() {}
+  busca($event) {
+    
+
+
+    this.showSpinner = true;
+    let datePipe = new DatePipe("pt-BR");
+
+    let data = datePipe.transform(new Date($event.value), "dd/MM/yyyy");
+
+    this.licitacaoService.getLicitacoes(data).subscribe(dados => {
+      this.licitacoes = dados;
+      this.showSpinner = false;
     });
   }
 }
