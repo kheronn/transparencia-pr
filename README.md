@@ -5,9 +5,8 @@
 [![](https://cdn-images-1.medium.com/max/720/0*_EfOoiLpbmDJG78w)](https://cdn-images-1.medium.com/max/720/0*_EfOoiLpbmDJG78w)
 
 
-#### Aplicação
 
-[SITE]( https://medium.com/@kheronn.machado/aplicacao-angular7-dados-abertos-part1-ba6b87573f86 )
+
 
 
 #### Tutorial 
