@@ -4,7 +4,7 @@
 
 [![](https://cdn-images-1.medium.com/max/720/0*_EfOoiLpbmDJG78w)](https://cdn-images-1.medium.com/max/720/0*_EfOoiLpbmDJG78w)
 
-[![](https://cdn-images-1.medium.com/max/720/0*_EfOoiLpbmDJG78w)](https://cdn-images-1.medium.com/max/720/0*_EfOoiLpbmDJG78w)
+[![](https://cdn-images-1.medium.com/max/800/1*VlCj_4nrqrx6S7Ixs6VWBg.png)](https://cdn-images-1.medium.com/max/800/1*VlCj_4nrqrx6S7Ixs6VWBg.png)
 
 
 
