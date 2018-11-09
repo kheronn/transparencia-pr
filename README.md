@@ -4,6 +4,9 @@
 
 [![](https://cdn-images-1.medium.com/max/720/0*_EfOoiLpbmDJG78w)](https://cdn-images-1.medium.com/max/720/0*_EfOoiLpbmDJG78w)
 
+[![](https://cdn-images-1.medium.com/max/720/0*_EfOoiLpbmDJG78w)](https://cdn-images-1.medium.com/max/720/0*_EfOoiLpbmDJG78w)
+
+
 
 
 
@@ -14,7 +17,7 @@
 
 [Parte 2]( https://medium.com/@kheronn.machado/aplicacao-angular7-dados-abertos-part2-9d55a19ecfbf )
 
-[Parte 3 - EM BREVE !!!](  )
+[Parte 3 - FINAL]( aplicacao-angular7-dados-abertos-part3-final-cacc5544b814 )
 
 
 

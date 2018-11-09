@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 
+
 export interface RetornoLicitacao {
   mensagem: string;
   quantidade: number;
@@ -29,7 +30,7 @@ export interface Processo {
   lista_item: Item[];
 }
 
-export interface Item{
+export interface Item {
   item: string;
   quantidade: number;
   valor_unitario_maximo_inicial: string;
@@ -42,10 +43,10 @@ export class LicitacaoService {
 
   urlLicitacao = 'http://www.transparencia.pr.gov.br/pte/ws/licitacoes/listarlicitacoes?datapublicacao='
 
-  constructor(private  http:  HttpClient) { }
+  constructor(private http: HttpClient) { }
 
 
-  getLicitacoes(data: string){
+  getLicitacoes(data: string) {
     return this.http.get<RetornoLicitacao>(this.urlLicitacao + data)
   }
 }
