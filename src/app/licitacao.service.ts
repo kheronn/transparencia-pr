@@ -33,7 +33,6 @@ export interface Item{
   item: string;
   quantidade: number;
   valor_unitario_maximo_inicial: string;
-
 }
 
 @Injectable({

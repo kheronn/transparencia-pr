@@ -12,16 +12,12 @@
     </mat-card>
   </div>
 
-
   <!-- Resultados -->
-
   <h2>({{licitacoes?.quantidade}}) Resultados</h2>
   <mat-spinner *ngIf="showSpinner"></mat-spinner>
 
   <div class="resultados">
-
     <mat-card *ngFor="let licitacao of licitacoes?.listaLicitacoes">
-
       <mat-card-content>
         <h3>{{licitacao.modalidade}} - Nº{{licitacao.num_ano_edital}} </h3>
         <p class="sublinhado">{{licitacao.orgao_responsavel}}</p>
@@ -47,5 +43,4 @@
       </mat-card-content>
     </mat-card>
   </div>
-
 </div>
